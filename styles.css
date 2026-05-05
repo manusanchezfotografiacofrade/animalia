@@ -58,8 +58,11 @@ h1, h2, h3{
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
+
+    width: 90%;
+    max-width: 250px;
+
     display: inline-block;
-    width: 250px;
     transition: 0.3s;
 }
 
@@ -69,7 +72,9 @@ h1, h2, h3{
 
 /* IMÁGENES */
 img{
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -120,4 +125,21 @@ footer{
     margin-top: 30px;
     background-color: #4a7c1e;
     padding: 10px;
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 600px) {
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-item, .service-item{
+        width: 90%;
+    }
+
+    input, textarea{
+        width: 90%;
+    }
 }
