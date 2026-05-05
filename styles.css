@@ -1,0 +1,123 @@
+/* GENERAL */
+body{
+    background: linear-gradient(135deg, #61941b, #3d6e12);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    background-color: #4a7c1e;
+    padding: 15px;
+}
+
+/* NAV */
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+/* TITULOS */
+h1, h2, h3{
+    margin-top: 20px;
+}
+
+/* BOTONES */
+.btn{
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* TARJETAS (PRODUCTOS Y SERVICIOS) */
+.product-item, .service-item{
+    background: rgba(255,255,255,0.1);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.product-item:hover, .service-item:hover{
+    transform: scale(1.05);
+}
+
+/* IMÁGENES */
+img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* BOTONES GENERALES */
+button{
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #ffd700cc;
+}
+
+/* FORMULARIO */
+form{
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input, textarea{
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* MAPA */
+iframe{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 30px;
+    background-color: #4a7c1e;
+    padding: 10px;
+}
