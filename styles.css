@@ -1,145 +1,263 @@
-/* GENERAL */
+/* =========================
+   ESTILOS GENERALES
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(135deg, #61941b, #3d6e12);
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
-    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header{
     background-color: #4a7c1e;
-    padding: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* NAV */
+header h1{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 nav ul{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
     list-style: none;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
 nav a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 nav a:hover{
+    background-color: rgba(255,255,255,0.15);
     color: gold;
 }
 
-/* TITULOS */
+/* =========================
+   TITULOS
+========================= */
 h1, h2, h3{
-    margin-top: 20px;
+    margin: 25px 0 15px;
 }
 
-/* BOTONES */
-.btn{
-    background: gold;
-    color: black;
-    padding: 12px 25px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    transform: scale(1.1);
-}
-
-/* TARJETAS (PRODUCTOS Y SERVICIOS) */
-.product-item, .service-item{
-    background: rgba(255,255,255,0.1);
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
-
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.container{
     width: 90%;
-    max-width: 250px;
+    max-width: 1200px;
+    margin: auto;
+}
 
-    display: inline-block;
+/* =========================
+   GRID PRODUCTOS/SERVICIOS
+========================= */
+.products-container,
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+.product-item,
+.service-item{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+
+    width: 260px;
+    min-height: 420px;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.product-item:hover, .service-item:hover{
-    transform: scale(1.05);
+.product-item:hover,
+.service-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* IMÁGENES */
-img{
+/* =========================
+   IMÁGENES
+========================= */
+.product-item img,
+.service-item img{
     width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 .logo{
     width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 20px auto;
+    display: block;
 }
 
-/* BOTONES GENERALES */
+/* =========================
+   TEXTO TARJETAS
+========================= */
+.product-item h4,
+.service-item h4{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.product-item p,
+.service-item p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* =========================
+   BOTONES
+========================= */
+.btn,
 button{
-    background-color: gold;
+    background: gold;
     color: black;
     border: none;
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
     margin-top: 10px;
 }
 
+.btn:hover,
 button:hover{
+    transform: scale(1.05);
     background-color: #ffd700cc;
 }
 
-/* FORMULARIO */
+/* =========================
+   FORMULARIO
+========================= */
 form{
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-input, textarea{
-    padding: 8px;
-    width: 200px;
-    border-radius: 5px;
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
+    outline: none;
+    font-size: 1rem;
 }
 
-/* MAPA */
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =========================
+   MAPA
+========================= */
 iframe{
-    border-radius: 10px;
-    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    height: 350px;
+
+    border: none;
+    border-radius: 15px;
+
+    margin: 30px auto;
+    display: block;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer{
-    margin-top: 30px;
+    margin-top: auto;
     background-color: #4a7c1e;
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
 }
 
-/* RESPONSIVE MÓVIL */
-@media (max-width: 600px) {
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px){
 
     nav ul{
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
     }
 
-    .product-item, .service-item{
-        width: 90%;
+    .products-container,
+    .services-container{
+        flex-direction: column;
+        align-items: center;
     }
 
-    input, textarea{
+    .product-item,
+    .service-item{
         width: 90%;
+        max-width: 320px;
+        min-height: auto;
+    }
+
+    header h1{
+        font-size: 1.6rem;
     }
 }
