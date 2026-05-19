@@ -30,36 +30,36 @@
 
     <form>
 
-        <input type="text" placeholder="Nombre completo" required><br><br>
+        <input type="text" name="nombre" placeholder="Nombre completo" required><br><br>
 
-        <input type="email" placeholder="Email" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
 
-        <input type="tel" placeholder="Teléfono"><br><br>
+        <input type="tel" name="telefono" placeholder="Teléfono"><br><br>
 
-        <input type="text" placeholder="Dirección (opcional)"><br><br>
+        <input type="text" name="direccion" placeholder="Dirección (opcional)"><br><br>
 
-        <select>
-            <option>Tipo de mascota</option>
-            <option>Perro</option>
-            <option>Gato</option>
-            <option>Ave</option>
-            <option>Pez</option>
-            <option>Reptil</option>
+        <select name="tipo_mascota">
+            <option value="">Tipo de mascota</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="pez">Pez</option>
+            <option value="reptil">Reptil</option>
         </select><br><br>
 
-        <select>
-            <option>Motivo de contacto</option>
-            <option>Consulta general</option>
-            <option>Productos</option>
-            <option>Adopción</option>
-            <option>Veterinaria</option>
-            <option>Envíos</option>
+        <select name="motivo">
+            <option value="">Motivo de contacto</option>
+            <option value="consulta_general">Consulta general</option>
+            <option value="productos">Productos</option>
+            <option value="adopcion">Adopción</option>
+            <option value="veterinaria">Veterinaria</option>
+            <option value="envios">Envíos</option>
         </select><br><br>
 
-        <textarea placeholder="Escribe tu mensaje..." rows="6"></textarea><br><br>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="6"></textarea><br><br>
 
         <label>
-            <input type="checkbox" required>
+            <input type="checkbox" name="privacidad" required>
             Acepto la política de privacidad
         </label><br><br>
 
