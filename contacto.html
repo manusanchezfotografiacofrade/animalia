@@ -1,49 +1,88 @@
-<form>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Animalia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo.ico">
+</head>
 
-    <label for="nombre">Nombre completo</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required><br><br>
+<body>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required><br><br>
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <label for="telefono">Teléfono</label><br>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600 123 456"><br><br>
+<main>
 
-    <label for="direccion">Dirección (opcional)</label><br>
-    <input type="text" id="direccion" name="direccion" placeholder="Tu ciudad o dirección"><br><br>
+    <h3>Contáctanos</h3>
 
-    <label for="mascota">Tipo de mascota</label><br>
-    <select id="mascota" name="mascota">
-        <option value="perro">Perro</option>
-        <option value="gato">Gato</option>
-        <option value="ave">Ave</option>
-        <option value="pez">Pez</option>
-        <option value="reptil">Reptil</option>
-        <option value="otro">Otro</option>
-    </select><br><br>
+    <p>📧 animalia@gmail.com</p>
+    <p>📞 612 48 93 07</p>
 
-    <label for="motivo">Motivo de contacto</label><br>
-    <select id="motivo" name="motivo">
-        <option value="consulta">Consulta general</option>
-        <option value="productos">Información de productos</option>
-        <option value="adopcion">Adopción de mascotas</option>
-        <option value="veterinaria">Servicio veterinario</option>
-        <option value="envio">Envíos y pedidos</option>
-    </select><br><br>
+    <form>
 
-    <label for="urgencia">Nivel de urgencia</label><br>
-    <input type="radio" name="urgencia" value="baja" checked> Baja
-    <input type="radio" name="urgencia" value="media"> Media
-    <input type="radio" name="urgencia" value="alta"> Alta<br><br>
+        <label for="nombre">Nombre completo</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required><br><br>
 
-    <label for="mensaje">Mensaje</label><br>
-    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu consulta..." required></textarea><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required><br><br>
 
-    <label>
-        <input type="checkbox" required>
-        Acepto la política de privacidad
-    </label><br><br>
+        <label for="telefono">Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600 123 456"><br><br>
 
-    <button type="submit">Enviar mensaje</button>
+        <label for="direccion">Dirección (opcional)</label><br>
+        <input type="text" id="direccion" name="direccion" placeholder="Ciudad o dirección"><br><br>
 
-</form>
+        <label for="mascota">Tipo de mascota</label><br>
+        <select id="mascota" name="mascota">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="pez">Pez</option>
+            <option value="reptil">Reptil</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="motivo">Motivo de contacto</label><br>
+        <select id="motivo" name="motivo">
+            <option value="consulta">Consulta general</option>
+            <option value="productos">Información de productos</option>
+            <option value="adopcion">Adopción de mascotas</option>
+            <option value="veterinaria">Servicio veterinario</option>
+            <option value="envio">Envíos y pedidos</option>
+        </select><br><br>
+
+        <label>Nivel de urgencia</label><br>
+        <input type="radio" name="urgencia" value="baja" checked> Baja
+        <input type="radio" name="urgencia" value="media"> Media
+        <input type="radio" name="urgencia" value="alta"> Alta<br><br>
+
+        <label for="mensaje">Mensaje</label><br>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu consulta..." required></textarea><br><br>
+
+        <label>
+            <input type="checkbox" required>
+            Acepto la política de privacidad
+        </label><br><br>
+
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Animalia</p>
+</footer>
+
+</body>
+</html>
